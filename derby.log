@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Fri Mar 29 18:26:32 CET 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-b72f-bcdb-000003226548 
+on database directory C:\Users\David\Documents\NetBeansProjects\Orion_Proyect\DB\Derby.DB  with class loader sun.misc.Launcher$AppClassLoader@5673cc11 
+Loaded from file:/C:/Users/David/Documents/NetBeansProjects/Orion_Proyect/src/Librerias/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0-b147
+user.dir=C:\Users\David\Documents\NetBeansProjects\Orion_Proyect
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
