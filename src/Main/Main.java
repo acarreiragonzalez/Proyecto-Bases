@@ -2,19 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package orion_proyect;
+package Main;
 
 /**
  *
- * @author David
+ * @author acarreiragonzalez
  */
-public class Orion_Proyect {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new Vista.VPrincipal().setVisible(true);
+        new Vista.Principal().setVisible(true);
     }
 }

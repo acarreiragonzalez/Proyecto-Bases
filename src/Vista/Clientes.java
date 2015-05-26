@@ -9,9 +9,9 @@ import Controlador.*;
 import java.sql.Connection;
 /**
  *
- * @author David
+ * @author acarreiragonzalez
  */
-public class L_Clientes extends javax.swing.JDialog {
+public class Clientes extends javax.swing.JDialog {
 Connection con;
 Operaciones op;
 Conexion cn;
@@ -20,7 +20,7 @@ private DefaultTableModel datoscli;
     /**
      * Creates new form L_Clientes
      */
-    public L_Clientes(java.awt.Frame parent, boolean modal) {
+    public Clientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         datoscli = new DefaultTableModel();
@@ -33,10 +33,10 @@ private DefaultTableModel datoscli;
     
      private void actuTablaCli(){             
         String[] columNames = {"NOMBRE","APELLIDO 1","APELLIDO 2","DIRECCIÓN"};  
-        // se utiliza la funcion
+        // actualizanse os datos da tabla
         dtCli = op.getClientes(con);
                
-        // se colocan los datos en la tabla
+        // colocanse os datos na tabla
         datoscli = new DefaultTableModel(dtCli,columNames);                        
         tablaCli.setModel(datoscli); 
         
@@ -187,20 +187,20 @@ private DefaultTableModel datoscli;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(L_Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(L_Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(L_Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(L_Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                L_Clientes dialog = new L_Clientes(new javax.swing.JFrame(), true);
+                Clientes dialog = new Clientes(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

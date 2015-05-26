@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Fri Mar 29 18:26:32 CET 2013:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-b72f-bcdb-000003226548 
-on database directory C:\Users\David\Documents\NetBeansProjects\Orion_Proyect\DB\Derby.DB  with class loader sun.misc.Launcher$AppClassLoader@5673cc11 
-Loaded from file:/C:/Users/David/Documents/NetBeansProjects/Orion_Proyect/src/Librerias/derby.jar
+Tue May 26 10:48:00 CEST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-014d-8f68-3277-000006ae7f08 
+on database directory /datos/local/acarreiragonzalez/Escritorio/p1/-ngel2/.\DB\Derby.DB  with class loader sun.misc.Launcher$AppClassLoader@713c817 
+Loaded from file:/datos/local/acarreiragonzalez/Escritorio/p1/-ngel2/src/Librerias/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.7.0-b147
-user.dir=C:\Users\David\Documents\NetBeansProjects\Orion_Proyect
+java.runtime.version=1.7.0_55-b13
+user.dir=/datos/local/acarreiragonzalez/Escritorio/p1/-ngel2
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

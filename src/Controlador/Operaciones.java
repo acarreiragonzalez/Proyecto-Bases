@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author David
+ * @author acarreiragonzalez
  */
 public class Operaciones {
     
@@ -20,7 +20,7 @@ public class Operaciones {
       int registros = 0;      
       String colname[] = fields.split(",");
 
-      //Consultas SQL
+      //apartado de sql
       String q ="SELECT " + fields + " FROM " + table;
       String q2 = "SELECT count(*) as total FROM " + table;
       if(where!=null)
@@ -38,9 +38,11 @@ public class Operaciones {
          JOptionPane.showMessageDialog(null, e.getLocalizedMessage());
       }
     
-    //se crea una matriz con tantas filas y columnas que necesite
+    //crease a matriz cas filas necesarias
     Object[][] data = new String[registros][fields.split(",").length];
     //realizamos la consulta sql y llenamos los datos en la matriz "Object"
+    
+    //realizase a consulta sql e henchemos os datos na matriz "Object creada"
       try{
          PreparedStatement pstm = con.prepareStatement(q);
          ResultSet res = pstm.executeQuery();
@@ -59,9 +61,9 @@ public class Operaciones {
       public boolean insert(String table, String fields, String values,Connection con) 
     {
         boolean res=false;
-        //Se arma la consulta
+        //Insercción na tabla
         String q=" INSERT INTO " + table + " ( " + fields + " ) VALUES ( " + values + " ) ";
-        //se ejecuta la consulta
+        //Ejecución da consulta
         try {
             PreparedStatement pstm = con.prepareStatement(q);
             pstm.execute();

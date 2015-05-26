@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 /**
  *
- * @author David
+ * @author acarreiragonzalez
  */
 public class Conexion {
     private Connection conn = null;
@@ -20,7 +20,7 @@ public class Conexion {
          //obtenemos la conexión
          conn = DriverManager.getConnection("jdbc:derby:.\\DB\\Derby.DB;create=true");
          if (conn!=null){
-            JOptionPane.showMessageDialog(null,"OK base de datos listo");
+            JOptionPane.showMessageDialog(null,"Conectouse á base de datos");
             String creartabla="create table Clientes(nombre varchar(50), ape1 varchar(50), ape2 varchar(50), direccion varchar(40))";
             String desc="disconnect;";
             try {
@@ -52,7 +52,7 @@ public class Conexion {
          //obtenemos la conexión
          conn = DriverManager.getConnection("jdbc:derby:.\\DB\\Derby.DB");
          if (conn!=null){
-            JOptionPane.showMessageDialog(null,"OK base de datos listo");
+           
          }
       }catch(SQLException e){
        JOptionPane.showMessageDialog(null,e.getMessage(),"Error" ,  JOptionPane.ERROR_MESSAGE);
